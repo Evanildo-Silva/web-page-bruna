@@ -330,6 +330,12 @@ main {
     border-radius: 100%;
 }
 
+.valores-container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
 .container {
     margin-block: 2rem;
     padding: 2rem 5rem;
@@ -740,6 +746,10 @@ footer {
         border-radius: 100%;
     }
 
+    .valores-container {
+        flex-direction: column;
+    }
+
     .container {
         margin-block: 2rem;
         padding: 0.5rem 0.75rem;
@@ -843,6 +853,23 @@ footer {
         align-items: center;
         flex-direction: column-reverse;
         gap: 0.5rem;
+    }
+
+    .carousel-sectiom {
+        display: flex;
+        background-color: white;
+        padding-block: 2rem;
+        padding-inline: 0;
+        border-radius: 5px;
+        margin-top: 2rem;
+    }
+
+    .swiper-slide .content .title {
+        font-size: 1.5rem;
+    }
+
+    .swiper-container.nav-slider .swiper-slide .content .title {
+        font-size: 12px;
     }
 }
 
