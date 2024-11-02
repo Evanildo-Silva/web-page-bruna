@@ -13,6 +13,11 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Add to the bottom of the <body> -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -35,40 +40,39 @@
 
     <!-- Main Content -->
     <main>
-        <div class="container-layout">
 
 
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="hero-content">
-                    <h1>The largest community of photo enthusiasts Nemo enim ipsam voluptatem quia voluptas sit.</h1>
-                    <div class="container-button">
-                        <button class="Btn">
-                            <div class="sign">
-                                <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                    </path>
-                                </svg>
-                            </div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The largest community of photo enthusiasts Nemo enim ipsam voluptatem quia voluptas sit.</h1>
+                <div class="container-button">
+                    <button class="Btn">
+                        <div class="sign">
+                            <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                                </path>
+                            </svg>
+                        </div>
 
-                            <div class="text">Whatsapp</div>
-                        </button>
-                        <button class="Btn">
-                            <div class="sign">
-                                <svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="2em"
-                                    viewBox="0 0 448 512">
-                                    <path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <span class="text">Instagram</span>
-                        </button>
-                    </div>
+                        <div class="text">Whatsapp</div>
+                    </button>
+                    <button class="Btn">
+                        <div class="sign">
+                            <svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text">Instagram</span>
+                    </button>
                 </div>
+            </div>
 
-            </section>
+        </section>
+        <div class="container-layout">
 
             <!-- Body layout -->
             <section class="about">
@@ -78,42 +82,61 @@
                     </span>
                     <span class="about-container-description">
                         <h2>Sobre a Chef Bruna Reishoffer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Amet, consectetur adipiscing elit,
-                            sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi...</p>
+                        <p>Professora na área de Confeitaria clássica e artística e também a fundadora e Chef
+                            Confeiteira do Ateliê que leva seu nome. <br>Bruna Reishoffer é apaixonada por adoçar
+                            histórias.
+                            Com mais de doze anos de experiência na Confeitaria, Bruna assina as criações de bolos e
+                            doces personalizados que encantam os olhos e o paladar. <br> Campeã do prêmio Top
+                            Excelência.
+                            Seu trabalho é referência em festas e eventos em Sobral e região.<br> O Ateliê Bruna
+                            Reishoffer
+                            desenvolve projetos exclusivos de acordo com a ocasião e necessidade de cada cliente.
+                            “Cada evento é uma oportunidade de deixar doces lembranças.”
+                            A Chef Bruna Reishoffer também se destaca na Organização do evento que reúne anualmente os
+                            melhores fornecedores de Casamentos, o Sonho de Noiva que em 2025 estará em sua terceira
+                            edição. </p>
                     </span>
                 </div>
             </section>
 
             <section class="container">
-                <div class="headline">Valores</div>
                 <div class="section">
                     <div>
-                        <h2>Sed ut perspiciatis</h2>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                            consequuntur
-                            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                    </div>
-                    <div>
-                        <h2>Lorem ipsum dolor</h2>
-                        <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-                    </div>
-                </div>
-                <div class="section">
-                    <div>
-                        <h2>Nemo enim ipsam</h2>
-                        <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                            est,
-                            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.
+                        <div class="headline">Visão</div>
+                        <p>
+                            Inspirar através de criações exclusivas, adoçar com produtos de qualidade e beleza e
+                            realizar doces sonhos através de nossos produtos
                         </p>
                     </div>
                     <div>
-                        <h2>Tempor incididunt</h2>
-                        <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                            dolor
-                            sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                        <div class="headline">Missão</div>
+                        <p>
+                            Inserir no mercado produtos diferenciados, estabelecendo parcerias através de excelência e
+                            comprometimento mútuo e ampliar cada vez mais o padrão de criação e qualidade.
+                        </p>
+                    </div>
+                </div>
+                <div class="section" style="display: flex; flex-direction: column;">
+                    <div class="headline">Valores</div>
+                    <div style="display: flex; gap: 2rem; width: 100%;">
+                        <div>
+                            <h2>Responsabilidade</h2>
+                            <p>
+                                Comprometimento e sensibilidade com o cliente desde o atendimento até a
+                                entrega.
+                        </div>
+                        <div>
+                            <h2>Etica</h2>
+                            <p>
+                                Agir com transparência e responsabilidade
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Qualidade</h2>
+                            <p>
+                                Buscar constantemente aprimoramento e inovação em nossos produtos
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -134,23 +157,13 @@
                     <span>
                         <div>
                             <h2 class="desk-title">Casamentos</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed ut perspiciatis
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                                <br>
-                                Lorem ipsum dolor
-                                Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                <br>
-                                Nemo enim ipsam
-                                Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                quisquam
-                                est,
-                                qui
-                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam...
+                            <p style="font-size: 1.3em;">
+                                Bruna Reishoffer tem grande experiência com casamentos.<br> Além de te auxiliar na
+                                montagem
+                                da sua mesa de doces, Bruna assina o projeto de bolos exclusivos, desenvolvidos a partir
+                                da identidade de cada casal ou a partir de inspirações.<br> O ateliê também dispõe de
+                                Mesas
+                                exclusivas ja pré elaboradas de acordo com a quantidade de convidados de cada festa.
                             </p>
                         </div>
                         <div class="container-button-feature">
@@ -182,24 +195,11 @@
                     </div>
                     <span>
                         <div>
-                            <h2 class="desk-title">Festas de 15 Anos</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed ut perspiciatis
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                                <br>
-                                Lorem ipsum dolor
-                                Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                <br>
-                                Nemo enim ipsam
-                                Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                quisquam
-                                est,
-                                qui
-                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam...
+                            <h2 class="desk-title">Debutante</h2>
+                            <p style="font-size: 1.3em;">
+                                O Ateliê Bruna Reishoffer tem vasta experiência em festas debutantes e do quão mágico
+                                pode ser esse momento.<br> Além de bolos clássicos, o ateliê assina projetos tematicos
+                                exclusivos, que permite o uso da criatividade e personalidade única de cada debutante.
                             </p>
                         </div>
                         <div class="container-button-feature">
@@ -232,23 +232,12 @@
                     <span>
                         <div>
                             <h2 class="desk-title">Aniversários e outros eventos</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed ut perspiciatis
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                                <br>
-                                Lorem ipsum dolor
-                                Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                <br>
-                                Nemo enim ipsam
-                                Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                quisquam
-                                est,
-                                qui
-                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam...
+                            <p style="font-size: 1.3em;">
+                                Há 12 anos atrás o Ateliê Bruna Reishoffer iniciava seus trabalhos com bolos e doces
+                                temáticos infantis, batizados e aniversários em geral.<br> Atualmente além de grandes
+                                casamentos e eventos, o ateliê tem um carinho e dedicação especial as produções infantis
+                                e temáticas.<br> A combinação das cores e a finalização de modelagens de açucar, são
+                                resultados de dedicação, zelo e carinho a cada detalhe.
                             </p>
                         </div>
                         <div class="container-button-feature">
@@ -267,7 +256,7 @@
                         </div>
                     </span>
                 </div>
-                <div class="feature">
+                <!-- <div class="feature">
                     <div class="responsive-title">
                         <div class="responsive-title">
                             <h2 class="responsive-title">Cursos</h2>
@@ -315,6 +304,314 @@
                             </button>
                         </div>
                     </span>
+                </div> -->
+            </section>
+
+            <!-- Carousel Section -->
+            <section class="carousel-sectiom">
+                <div class="swiper-container main-slider loading">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-01.jpeg)">
+                                <img src="./images/sn-01.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-02.jpeg)">
+                                <img src="./images/sn-02.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-03.jpeg)">
+                                <img src="./images/sn-03.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-04.jpeg)">
+                                <img src="./images/sn-04.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-05.jpeg); background-position: top;">
+                                <img src="./images/sn-05.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-06.jpeg)">
+                                <img src="./images/sn-06.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-07.jpeg)">
+                                <img src="./images/sn-07.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-08.jpeg)">
+                                <img src="./images/sn-08.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-09.jpeg)">
+                                <img src="./images/sn-09.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-10.jpeg)">
+                                <img src="./images/sn-10.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-11.jpeg); background-position: top;">
+                                <img src="./images/sn-11.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-12.jpeg); background-position: top;">
+                                <img src="./images/sn-12.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-13.jpeg); background-position: top;">
+                                <img src="./images/sn-13.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-14.jpeg)">
+                                <img src="./images/sn-14.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-15.jpeg); background-position: top;">
+                                <img src="./images/sn-15.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                    type specimen book.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+
+                <!-- Thumbnail navigation -->
+                <div class="swiper-container nav-slider loading">
+                    <div class="swiper-wrapper" role="navigation">
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-01.jpeg)">
+                                <img src="./images/sn-01.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-02.jpeg)">
+                                <img src="./images/sn-02.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-03.jpeg)">
+                                <img src="./images/sn-03.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-04.jpeg)">
+                                <img src="./images/sn-04.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-05.jpeg); background-position: top;">
+                                <img src="./images/sn-05.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-06.jpeg)">
+                                <img src="./images/sn-06.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-07.jpeg)">
+                                <img src="./images/sn-07.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2023</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-08.jpeg)">
+                                <img src="./images/sn-08.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-09.jpeg)">
+                                <img src="./images/sn-09.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-10.jpeg)">
+                                <img src="./images/sn-10.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-11.jpeg)">
+                                <img src="./images/sn-11.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-12.jpeg)">
+                                <img src="./images/sn-12.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-13.jpeg)">
+                                <img src="./images/sn-13.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-14.jpeg)">
+                                <img src="./images/sn-14.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg" style="background-image:url(./images/sn-15.jpeg)">
+                                <img src="./images/sn-15.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <p class="title">Sonho de Noiva 2024</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -479,6 +776,7 @@
             </footer>
         </div>
     </main>
+    <script src="./js/index.js" defer></script>
 </body>
 
 </html>
