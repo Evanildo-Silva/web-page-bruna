@@ -18,6 +18,32 @@ body {
     margin-inline: auto;
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    z-index: 1000;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -50,6 +76,27 @@ nav {
 .menu li a {
     color: #B15231;
     text-decoration: none;
+}
+
+/* Botão hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 /*-----------------------------------*\
@@ -145,6 +192,78 @@ main {
 .swiper-container.nav-slider .swiper-slide .content .title {
     font-size: 20px;
 }
+
+/* ============================================================================================= */
+.swiper-container.wedding-nav-slider {
+    width: 25%;
+    height: 100%;
+}
+
+.swiper-container.wedding-nav-slider .swiper-slide {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-container.wedding-nav-slider .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-container.wedding-nav-slider .swiper-slide .content {
+    width: 100%;
+}
+
+.swiper-container.wedding-nav-slider .swiper-slide .content .title {
+    font-size: 20px;
+}
+
+.swiper-container.debutante-nav-slider {
+    width: 25%;
+    height: 100%;
+}
+
+.swiper-container.debutante-nav-slider .swiper-slide {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-container.debutante-nav-slider .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-container.debutante-nav-slider .swiper-slide .content {
+    width: 100%;
+}
+
+.swiper-container.debutante-nav-slider .swiper-slide .content .title {
+    font-size: 20px;
+}
+
+.swiper-container.birthday-nav-slider {
+    width: 25%;
+    height: 100%;
+}
+
+.swiper-container.birthday-nav-slider .swiper-slide {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-container.birthday-nav-slider .swiper-slide.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-container.birthday-nav-slider .swiper-slide .content {
+    width: 100%;
+}
+
+.swiper-container.birthday-nav-slider .swiper-slide .content .title {
+    font-size: 20px;
+}
+
+/* ============================================================================================= */
 
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next {
@@ -369,6 +488,11 @@ main {
     line-height: 1.5;
 }
 
+
+.divider {
+    display: block;
+}
+
 .features {
     display: grid;
     grid-template-columns: 1fr;
@@ -377,20 +501,29 @@ main {
 
 .feature {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     background-color: white;
-    padding: 5rem;
+    padding-block: 2rem;
+    padding-inline: 5rem;
     border-radius: 5px;
+    overflow: hidden;
 }
 
+.feature-carousel {
+    display: flex;
+    width: 60%;
+    height: 80vh;
+}
 
 .features .feature:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
-    gap: 5rem;
+    gap: 2rem;
     background-color: white;
-    padding: 5rem;
+    padding-block: 2rem;
+    padding-inline: 5rem;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .feature span {
@@ -475,7 +608,7 @@ main {
 }
 
 
-.carousel-sectiom {
+.carousel-section {
     display: flex;
     background-color: white;
     padding-block: 2rem;
@@ -487,15 +620,6 @@ main {
 .testimonials {
     padding: 2rem;
     text-align: left;
-}
-
-.card {
-    position: absolute;
-    height: auto;
-    left: 32%;
-    margin: auto;
-    transition: transform .4s ease;
-    cursor: pointer;
 }
 
 .container-testimonial {
@@ -516,38 +640,75 @@ main {
     position: relative;
     width: 100%;
     height: 400px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#item-1:checked~.cards #testimonial-3,
-#item-2:checked~.cards #testimonial-1,
-#item-3:checked~.cards #testimonial-2 {
-    transform: translatex(-70%) scale(.8);
-    opacity: .4;
+.card {
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    width: 100%;
+    height: 100%;
+    max-width: 550px;
+    max-height: 310px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Default state for cards not in focus */
+.card {
+    transform: scale(0.8);
+    opacity: 0.4;
     z-index: 0;
 }
 
-#item-1:checked~.cards #testimonial-2,
-#item-2:checked~.cards #testimonial-3,
-#item-3:checked~.cards #testimonial-1 {
-    transform: translatex(70%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-}
-
+/* States for cards based on input checked */
 #item-1:checked~.cards #testimonial-1,
 #item-2:checked~.cards #testimonial-2,
-#item-3:checked~.cards #testimonial-3 {
-    transform: translatex(0) scale(1);
+#item-3:checked~.cards #testimonial-3,
+#item-4:checked~.cards #testimonial-4,
+#item-5:checked~.cards #testimonial-5,
+#item-6:checked~.cards #testimonial-6,
+#item-7:checked~.cards #testimonial-7 {
+    transform: translateX(0) scale(1);
     opacity: 1;
     z-index: 1;
+}
+
+/* Cards to the left */
+#item-1:checked~.cards #testimonial-7,
+#item-2:checked~.cards #testimonial-1,
+#item-3:checked~.cards #testimonial-2,
+#item-4:checked~.cards #testimonial-3,
+#item-5:checked~.cards #testimonial-4,
+#item-6:checked~.cards #testimonial-5,
+#item-7:checked~.cards #testimonial-6 {
+    transform: translateX(-70%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+/* Cards to the right */
+#item-1:checked~.cards #testimonial-2,
+#item-2:checked~.cards #testimonial-3,
+#item-3:checked~.cards #testimonial-4,
+#item-4:checked~.cards #testimonial-5,
+#item-5:checked~.cards #testimonial-6,
+#item-6:checked~.cards #testimonial-7,
+#item-7:checked~.cards #testimonial-1 {
+    transform: translateX(70%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
 }
 
 figure.testimonial {
     font-family: 'Raleway', Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    margin: 10px;
     padding: 1rem;
     border-radius: 10px;
     min-width: 220px;
@@ -571,7 +732,7 @@ figure.testimonial img {
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    margin: 40px 0 0 10px;
+    margin: 10px 0 0 10px;
 }
 
 figure.testimonial blockquote {
@@ -684,6 +845,22 @@ footer {
     filter: brightness(0.6);
 }
 
+.sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 35px;
+}
+
+.sign svg path {
+    fill: white;
+}
+
 @media (max-width: 768px) {
 
     header {
@@ -696,13 +873,8 @@ footer {
         height: 45px;
     }
 
-    .menu a {
-        font-size: small;
-    }
-
-    .menu li {
-        display: inline;
-        margin-right: 0.5rem;
+    .text {
+        display: none;
     }
 
     /*-----------------------------------*\
@@ -786,15 +958,19 @@ footer {
         margin-bottom: 20px;
     }
 
+    .divider {
+        display: none;
+    }
+
     .features {
         grid-template-columns: 1fr;
     }
 
     .feature {
         display: flex;
-        gap: 2rem;
+        gap: 0rem;
         background-color: white;
-        padding: 0.5rem 0.75rem;
+        padding: 0.5rem 0.5rem;
         border-radius: 5px;
         flex-direction: column;
         text-align: center;
@@ -836,10 +1012,6 @@ footer {
         padding: 0.5rem;
     }
 
-    .desk {
-        display: none;
-    }
-
     .responsive {
         display: block;
     }
@@ -855,13 +1027,68 @@ footer {
         gap: 0.5rem;
     }
 
-    .carousel-sectiom {
+    .carousel-section {
         display: flex;
+        flex-direction: column;
         background-color: white;
         padding-block: 2rem;
-        padding-inline: 0;
+        padding-inline: 0.5rem;
         border-radius: 5px;
         margin-top: 2rem;
+    }
+
+    .feature-carousel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding-block: 2rem;
+        padding-inline: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .swiper-container.nav-slider {
+        width: 100%;
+        height: 15vh;
+        padding-left: 0px;
+    }
+
+    .swiper-container.wedding-nav-slider {
+        width: 100%;
+        height: 15vh;
+        padding-left: 0px;
+    }
+
+    .swiper-container.debutante-nav-slider {
+        width: 100%;
+        height: 15vh;
+        padding-left: 0px;
+    }
+
+    .swiper-container.birthday-nav-slider {
+        width: 100%;
+        height: 15vh;
+        padding-left: 0px;
+    }
+
+    .swiper-container.main-slider {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .swiper-container.wedding-section-slider {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .swiper-container.debutante-section-slider {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .swiper-container.birthday-section-slider {
+        width: 100%;
+        height: 55vh;
     }
 
     .swiper-slide .content .title {
@@ -871,6 +1098,157 @@ footer {
     .swiper-container.nav-slider .swiper-slide .content .title {
         font-size: 12px;
     }
+
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .card {
+        height: fit-content;
+    }
+
+    .cards {
+        overflow: hidden;
+    }
+
+    figure.testimonial img {
+        max-width: 100%;
+        vertical-align: middle;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin: 8px 0 0 8px;
+    }
+
+    figure.testimonial blockquote {
+        display: block;
+        border-radius: 8px;
+        position: relative;
+        background-color: #E8DDD0;
+        padding: 8px 16px 12px 16px;
+        font-size: 0.8em;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1.6em;
+        font-style: italic;
+    }
+
+    figure.testimonial blockquote:before,
+    figure.testimonial blockquote:after {
+        font-family: 'FontAwesome';
+        content: "\201C";
+        position: absolute;
+        font-size: 24px;
+        opacity: 0.3;
+        font-style: normal;
+    }
+
+    figure.testimonial blockquote:before {
+        top: 5px;
+        left: 2px;
+    }
+
+    figure.testimonial blockquote:after {
+        content: "\201D";
+        right: 2px;
+        bottom: 0;
+    }
+
+    /* States for cards based on input checked */
+    #item-1:checked~.cards #testimonial-1,
+    #item-2:checked~.cards #testimonial-2,
+    #item-3:checked~.cards #testimonial-3,
+    #item-4:checked~.cards #testimonial-4,
+    #item-5:checked~.cards #testimonial-5,
+    #item-6:checked~.cards #testimonial-6,
+    #item-7:checked~.cards #testimonial-7 {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+    }
+
+    /* Cards to the left */
+    #item-1:checked~.cards #testimonial-7,
+    #item-2:checked~.cards #testimonial-1,
+    #item-3:checked~.cards #testimonial-2,
+    #item-4:checked~.cards #testimonial-3,
+    #item-5:checked~.cards #testimonial-4,
+    #item-6:checked~.cards #testimonial-5,
+    #item-7:checked~.cards #testimonial-6 {
+        transform: translateY(-70%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    /* Cards to the right */
+    #item-1:checked~.cards #testimonial-2,
+    #item-2:checked~.cards #testimonial-3,
+    #item-3:checked~.cards #testimonial-4,
+    #item-4:checked~.cards #testimonial-5,
+    #item-5:checked~.cards #testimonial-6,
+    #item-6:checked~.cards #testimonial-7,
+    #item-7:checked~.cards #testimonial-1 {
+        transform: translateY(70%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    .testimonials {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+        /* Oculta o menu inicialmente */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+        /* Mostra o botão hambúrguer */
+    }
+
+    /* Menu ativo */
+    .menu.active {
+        display: flex;
+        z-index: 10000;
+        /* Mostra o menu ao clicar */
+    }
+
+    /* Animação do botão hambúrguer */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+
 }
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);

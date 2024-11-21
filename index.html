@@ -24,15 +24,38 @@
     <!-- Header -->
     <header>
         <div class="container-layout">
-
-            <nav>
+            <!-- <nav>
                 <a href="#" class="logo">
                     <img src="./images/logo-bruna.png" alt="logo">
                 </a>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#casamentos">Casamentos</a></li>
+                    <li><a href="#debutante">Debutantes</a></li>
+                    <li><a href="#aniversarios">Aniversários</a></li>
+                    <li><a href="#footer">Contatos</a></li>
+                </ul>
+            </nav> -->
+            <!-- Responsive -->
+            <nav>
+                <a href="#" class="logo">
+                    <img src="./images/logo-bruna.png" alt="logo">
+                </a>
+                <!-- Botão hambúrguer -->
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#casamentos">Casamentos</a></li>
+                    <li><a href="#debutante">Debutantes</a></li>
+                    <li><a href="#aniversarios">Aniversários</a></li>
+                    <li><a href="#footer">Contatos</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,41 +64,59 @@
     <!-- Main Content -->
     <main>
 
-
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-content">
-                <h1>The largest community of photo enthusiasts Nemo enim ipsam voluptatem quia voluptas sit.</h1>
+                <h1>Ateliê Bruna Reishoffer</h1>
                 <div class="container-button">
-                    <button class="Btn">
-                        <div class="sign">
-                            <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
-                                <path
-                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <div class="text">Whatsapp</div>
-                    </button>
-                    <button class="Btn">
-                        <div class="sign">
-                            <svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                </path>
-                            </svg>
-                        </div>
-                        <span class="text">Instagram</span>
-                    </button>
+                    <a href="https://wa.me/5588994851096" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration: none;">
+                        <button class="Btn">
+                            <div class="sign">
+                                <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="text">Whatsapp</div>
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/brunareishoffer/" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration: none;">
+                        <button class="Btn">
+                            <div class="sign">
+                                <svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="2em"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="text">Instagram</span>
+                        </button>
+                    </a>
+                    <a href="https://linktr.ee/BrunaReishoffer" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration: none;">
+                        <button class="Btn">
+                            <div class="sign">
+                                <svg class="svgIcon" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em""
+                                    viewBox=" 0 0 600 512" fill="white">
+                                    <path
+                                        d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="text">Linktree</span>
+                        </button>
+                    </a>
                 </div>
             </div>
 
         </section>
         <div class="container-layout">
-
             <!-- Body layout -->
-            <section class="about">
+            <section class="about" id="sobre">
                 <div class="about-container">
                     <span class="about-container-image">
                         <div class="about-image-placeholder"></div>
@@ -117,20 +158,22 @@
                     </div>
                 </div>
                 <div class="section" style="display: flex; flex-direction: column;">
-                    <div class="headline">Valores</div>
-                    <div class="valores-container">
+                    <div class="headline" style="width: 100%;">Valores</div>
+                    <div class="valores-container" style="width: 100%">
                         <div>
                             <h2>Responsabilidade</h2>
                             <p>
                                 Comprometimento e sensibilidade com o cliente desde o atendimento até a
                                 entrega.
                         </div>
+                        <div class="divider" style="border: 1px solid #333; width: 0px;"></div>
                         <div>
                             <h2>Etica</h2>
                             <p>
                                 Agir com transparência e responsabilidade
                             </p>
                         </div>
+                        <div class="divider" style="border: 1px solid #333; width: 0px;"></div>
                         <div>
                             <h2>Qualidade</h2>
                             <p>
@@ -141,18 +184,247 @@
                 </div>
             </section>
 
-
+            <!-- Features Section -->
             <section class="features">
-                <div class="feature">
+                <div class="feature" id="casamentos">
                     <div class="responsive-title">
                         <div class="responsive-title">
                             <h2 class="responsive-title">Casamentos</h2>
                         </div>
                     </div>
-                    <div class="image-placeholder">
-                        <img src="./images/wedding-cake-1.jpeg" alt="seção casamentos">
-                        <img src="./images/wedding-cake-2.jpeg" alt="seção casamentos">
-                        <img src="./images/wedding-cake-3.jpeg" alt="seção casamentos">
+                    <div class="feature-carousel">
+                        <div class="swiper-container wedding-section-slider loading" style="width: 100%;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-1.jpeg);background-color: #F4EEEB;">
+                                        <img src="./images/wedding-cake-1.jpeg" class="entity-img" width="60%"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-2.jpeg)">
+                                        <img src="./images/wedding-cake-2.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-3.jpeg)">
+                                        <img src="./images/wedding-cake-3.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-4.jpeg)">
+                                        <img src="./images/wedding-cake-4.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-5.jpeg)">
+                                        <img src="./images/wedding-cake-5.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-6.jpeg)">
+                                        <img src="./images/wedding-cake-6.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-7.jpeg)">
+                                        <img src="./images/wedding-cake-7.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-3.jpeg)">
+                                        <img src="./images/birthdays-3.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-8.jpeg)">
+                                        <img src="./images/wedding-cake-8.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-9.jpeg)">
+                                        <img src="./images/wedding-cake-9.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-10.jpeg)">
+                                        <img src="./images/wedding-cake-10.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-1.jpeg)">
+                                        <img src="./images/debutante-1.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next wedding-section-slider-next"></div>
+                            <div class="swiper-button-prev wedding-section-slider-prev"></div>
+                        </div>
+                        <div class="swiper-container wedding-nav-slider loading">
+                            <div class="swiper-wrapper" role="navigation">
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-1.jpeg); background-size: contain;">
+                                        <img src="./images/wedding-cake-1.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-2.jpeg)">
+                                        <img src="./images/wedding-cake-2.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-3.jpeg)">
+                                        <img src="./images/wedding-cake-3.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-4.jpeg)">
+                                        <img src="./images/wedding-cake-4.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-5.jpeg)">
+                                        <img src="./images/wedding-cake-5.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-6.jpeg)">
+                                        <img src="./images/wedding-cake-6.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-7.jpeg)">
+                                        <img src="./images/wedding-cake-7.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-3.jpeg)">
+                                        <img src="./images/birthdays-3.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-8.jpeg)">
+                                        <img src="./images/wedding-cake-8.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-9.jpeg)">
+                                        <img src="./images/wedding-cake-9.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/wedding-cake-10.jpeg)">
+                                        <img src="./images/wedding-cake-10.jpeg" class="entity-img"
+                                            alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/debutante-1.jpeg); background-size: contain;">
+                                        <img src="./images/debutante-1.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <span>
                         <div>
@@ -166,68 +438,267 @@
                                 exclusivas ja pré elaboradas de acordo com a quantidade de convidados de cada festa.
                             </p>
                         </div>
-                        <div class="container-button-feature">
-                            <p>Entre em contato pelo nosso Whatsapp para receber um orçamento personalizado.</p>
-                            <button class="Btn">
-                                <div class="sign">
-                                    <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                        </path>
-                                    </svg>
-                                </div>
-
-                                <div class="text">Whatsapp</div>
-                            </button>
-                        </div>
                     </span>
                 </div>
-                <div class="feature">
+                <div class="feature" id="debutante">
                     <div class="responsive-title">
                         <div class="responsive-title">
-                            <h2 class="responsive-title">Festas de 15 Anos</h2>
+                            <h2 class="responsive-title">Debutantes</h2>
                         </div>
                     </div>
-                    <div class="image-placeholder">
-                        <img src="./images/debutante-2.jpeg" alt="seção casamentos">
-                        <img src="./images/debutante-3.jpeg" alt="seção casamentos">
-                        <img src="./images/debutante-1.jpeg" alt="seção casamentos">
+                    <div class="feature-carousel">
+                        <div class="swiper-container debutante-section-slider loading" style="width: 100%;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-7.jpeg)">
+                                        <img src="./images/debutante-7.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-3.jpeg)">
+                                        <img src="./images/debutante-3.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-4.jpeg)">
+                                        <img src="./images/debutante-4.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-5.jpeg)">
+                                        <img src="./images/debutante-5.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-6.jpeg)">
+                                        <img src="./images/debutante-6.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-2.jpeg)">
+                                        <img src="./images/debutante-2.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-8.jpeg)">
+                                        <img src="./images/debutante-8.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next debutante-section-slider-next"></div>
+                            <div class="swiper-button-prev debutante-section-slider-prev"></div>
+                        </div>
+                        <div class="swiper-container debutante-nav-slider loading">
+                            <div class="swiper-wrapper" role="navigation">
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-7.jpeg)">
+                                        <img src="./images/debutante-7.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-3.jpeg)">
+                                        <img src="./images/debutante-3.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-4.jpeg)">
+                                        <img src="./images/debutante-4.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-5.jpeg)">
+                                        <img src="./images/debutante-5.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-6.jpeg)">
+                                        <img src="./images/debutante-6.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-2.jpeg)">
+                                        <img src="./images/debutante-2.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/debutante-8.jpeg)">
+                                        <img src="./images/debutante-8.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <span>
                         <div>
-                            <h2 class="desk-title">Debutante</h2>
+                            <h2 class="desk-title">Debutantes</h2>
                             <p style="font-size: 1.3em;">
                                 O Ateliê Bruna Reishoffer tem vasta experiência em festas debutantes e do quão mágico
                                 pode ser esse momento.<br> Além de bolos clássicos, o ateliê assina projetos tematicos
                                 exclusivos, que permite o uso da criatividade e personalidade única de cada debutante.
                             </p>
                         </div>
-                        <div class="container-button-feature">
-                            <p>Entre em contato pelo nosso Whatsapp para receber um orçamento personalizado.</p>
-                            <button class="Btn">
-                                <div class="sign">
-                                    <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                        </path>
-                                    </svg>
-                                </div>
-
-                                <div class="text">Whatsapp</div>
-                            </button>
-                        </div>
                     </span>
                 </div>
-                <div class="feature">
+                <div class="feature" id="aniversarios">
                     <div class="responsive-title">
                         <div class="responsive-title">
                             <h2 class="responsive-title">Aniversários e outros eventos</h2>
                         </div>
                     </div>
-                    <div class="image-placeholder">
-                        <img src="./images/birthdays-1.jpeg" alt="seção casamentos">
-                        <img src="./images/birthdays-2.jpeg" alt="seção casamentos">
-                        <img src="./images/birthdays-3.jpeg" alt="seção casamentos">
+                    <div class="feature-carousel">
+                        <div class="swiper-container birthday-section-slider loading" style="width: 100%;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg"
+                                        style="background-image:url(./images/birthdays-1.jpeg); background-size: contain;">
+                                        <img src="./images/birthdays-1.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-2.jpeg)">
+                                        <img src="./images/birthdays-2.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-4.jpeg)">
+                                        <img src="./images/birthdays-4.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-5.jpeg)">
+                                        <img src="./images/birthdays-5.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-6.jpeg)">
+                                        <img src="./images/birthdays-6.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-7.jpeg)">
+                                        <img src="./images/birthdays-7.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-8.jpeg)">
+                                        <img src="./images/birthdays-8.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next birthday-section-slider-next"></div>
+                            <div class="swiper-button-prev birthday-section-slider-prev"></div>
+                        </div>
+                        <div class="swiper-container birthday-nav-slider loading">
+                            <div class="swiper-wrapper" role="navigation">
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-1.jpeg)">
+                                        <img src="./images/birthdays-1.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-2.jpeg)">
+                                        <img src="./images/birthdays-2.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-4.jpeg)">
+                                        <img src="./images/birthdays-4.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-5.jpeg)">
+                                        <img src="./images/birthdays-5.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-6.jpeg)">
+                                        <img src="./images/birthdays-6.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-7.jpeg)">
+                                        <img src="./images/birthdays-7.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="slide-bgimg" style="background-image:url(./images/birthdays-8.jpeg)">
+                                        <img src="./images/birthdays-8.jpeg" class="entity-img" alt="seção casamentos">
+                                    </figure>
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <span>
                         <div>
@@ -240,75 +711,12 @@
                                 resultados de dedicação, zelo e carinho a cada detalhe.
                             </p>
                         </div>
-                        <div class="container-button-feature">
-                            <p>Entre em contato pelo nosso Whatsapp para receber um orçamento personalizado.</p>
-                            <button class="Btn">
-                                <div class="sign">
-                                    <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                        </path>
-                                    </svg>
-                                </div>
-
-                                <div class="text">Whatsapp</div>
-                            </button>
-                        </div>
                     </span>
                 </div>
-                <!-- <div class="feature">
-                    <div class="responsive-title">
-                        <div class="responsive-title">
-                            <h2 class="responsive-title">Cursos</h2>
-                        </div>
-                    </div>
-                    <div class="image-placeholder">
-                        <img src="./images/classes-1.jpeg" alt="seção casamentos">
-                        <img src="./images/classes-2.jpeg" alt="seção casamentos">
-                        <img src="./images/classes-3.jpeg" alt="seção casamentos">
-                    </div>
-                    <span>
-                        <div>
-                            <h2 class="desk-title">Cursos</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed ut perspiciatis
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur
-                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                                <br>
-                                Lorem ipsum dolor
-                                Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                <br>
-                                Nemo enim ipsam
-                                Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                quisquam
-                                est,
-                                qui
-                                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam...
-                            </p>
-                        </div>
-                        <div class="container-button-feature">
-                            <p>Para mais informações sobre os cursos entre em contato pelo nosso Whatsapp.</p>
-                            <button class="Btn">
-                                <div class="sign">
-                                    <svg class="svgIcon" height="2em" viewBox="0 0 16 16">
-                                        <path
-                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                                        </path>
-                                    </svg>
-                                </div>
-
-                                <div class="text">Whatsapp</div>
-                            </button>
-                        </div>
-                    </span>
-                </div> -->
             </section>
 
             <!-- Carousel Section -->
-            <section class="carousel-sectiom">
+            <section class="carousel-section">
                 <div class="swiper-container main-slider loading">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -317,9 +725,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2023</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -328,9 +734,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2023</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -339,9 +743,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2023</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -350,9 +752,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2023</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -362,9 +762,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2023</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -372,10 +770,8 @@
                                 <img src="./images/sn-06.jpeg" class="entity-img" />
                             </figure>
                             <div class="content">
-                                <p class="title">Sonho de Noiva 2023</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <p class="title" style="margin-bottom: 100px;">Sonho de Noiva 2023</p>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -384,9 +780,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2023</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -395,9 +789,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -406,9 +798,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -417,9 +807,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -429,9 +817,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -441,9 +827,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -453,9 +837,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -464,9 +846,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -476,9 +856,7 @@
                             </figure>
                             <div class="content">
                                 <p class="title">Sonho de Noiva 2024</p>
-                                <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since
-                                    the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                                    type specimen book.</span>
+                                <span class="caption"></span>
                             </div>
                         </div>
                     </div>
@@ -572,7 +950,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background-image:url(./images/sn-11.jpeg)">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-11.jpeg); background-position: top;">
                                 <img src="./images/sn-11.jpeg" class="entity-img" />
                             </figure>
                             <div class="content">
@@ -580,7 +959,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background-image:url(./images/sn-12.jpeg)">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-12.jpeg); background-position: top;">
                                 <img src="./images/sn-12.jpeg" class="entity-img" />
                             </figure>
                             <div class="content">
@@ -588,7 +968,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background-image:url(./images/sn-13.jpeg)">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-13.jpeg); background-position: top;">
                                 <img src="./images/sn-13.jpeg" class="entity-img" />
                             </figure>
                             <div class="content">
@@ -604,7 +985,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="slide-bgimg" style="background-image:url(./images/sn-15.jpeg)">
+                            <figure class="slide-bgimg"
+                                style="background-image:url(./images/sn-15.jpeg); background-position: top;">
                                 <img src="./images/sn-15.jpeg" class="entity-img" />
                             </figure>
                             <div class="content">
@@ -618,156 +1000,155 @@
             <!-- Testimonials Section -->
             <section class="testimonials">
                 <div class="container-testimonial desk">
+                    <!-- Inputs para os cards -->
                     <input type="radio" name="slider" id="item-1" checked style="margin-inline: 12px; display: none">
                     <input type="radio" name="slider" id="item-2" style="margin-inline: 12px; display: none">
                     <input type="radio" name="slider" id="item-3" style="margin-inline: 12px; display: none">
+                    <input type="radio" name="slider" id="item-4" style="margin-inline: 12px; display: none">
+                    <input type="radio" name="slider" id="item-5" style="margin-inline: 12px; display: none">
+                    <input type="radio" name="slider" id="item-6" style="margin-inline: 12px; display: none">
+                    <input type="radio" name="slider" id="item-7" style="margin-inline: 12px; display: none">
+
                     <div class="cards">
+                        <!-- Card 1 -->
                         <label class="card" for="item-1" id="testimonial-1">
                             <figure class="testimonial">
-                                <blockquote>My behaviour is addictive functioning in a disease process of toxic
-                                    co-dependency. I
-                                    need holistic healing and wellness before I'll accept any responsibility for my
-                                    actions.
-                                    <div class="arrow"></div>
+                                <blockquote>Ficou tudo lindo, o bolo ficou maravilhoso!🥰
+                                    Obrigado pelas embalagens que você colocou, por ter arrumado tudo tão lindo.
+                                    O bolo, estou com tanta pena de partir!!!😁
+                                    É uma obra de arte!!!
+                                    Muito lindo!
                                 </blockquote>
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg"
-                                    alt="sq-sample17" />
+                                <img src="./images/dep-josy.png" alt="sq-sample17" />
                                 <div class="author">
-                                    <h5>Eleanor Faint 1</h5>
+                                    <h5>Josy Cysne Frota</h5>
                                     <div class="stars">
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
                                     </div>
                                 </div>
                             </figure>
                         </label>
+
+                        <!-- Card 2 -->
                         <label class="card" for="item-2" id="testimonial-2">
-                            <figure class="testimonial hover">
-                                <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is
-                                    in a
-                                    professional, clear plastic binder...When a report looks this good, you know
-                                    it'll get an A.
-                                    That's a tip kids. Write it down.
-                                    <div class="arrow"></div>
+                            <figure class="testimonial">
+                                <blockquote>Amoree. Muito obrigado viu, bolo lindo e acima de tudo delicioso.
+                                    Você é maravilhosa!
                                 </blockquote>
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg"
-                                    alt="sq-sample27" />
+                                <img src="./images/dep-aline.jpeg" alt="sq-sample27" />
                                 <div class="author">
-                                    <h5>Max Conversion 2</h5>
+                                    <h5>Aline Castro</h5>
                                     <div class="stars">
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
                                     </div>
                                 </div>
                             </figure>
                         </label>
+
+                        <!-- Card 3 -->
                         <label class="card" for="item-3" id="testimonial-3">
                             <figure class="testimonial">
-                                <blockquote>Calvin: You know sometimes when I'm talking, my words can't keep up with
-                                    my
-                                    thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we
-                                    can think
-                                    twice.
-                                    <div class="arrow"></div>
+                                <blockquote>Estou ainda em êxtase com tudo, mas não poderia deixar de agradecê-la.
+                                    Seu trabalho é mágico impecável.
+                                    Quando vi aquele bolo senti algo tão divino que não saberia explicar.
+                                    Muito obrigado, que Deus possa continuar lhe usando como instrumento na realização
+                                    de muitos sonhos.
                                 </blockquote>
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg"
-                                    alt="sq-sample3" />
+                                <img src="./images/dep-dani.png" alt="sq-sample3" />
                                 <div class="author">
-                                    <h5>Pelican Steve 3</h5>
+                                    <h5>Dani</h5>
                                     <div class="stars">
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
-                                        <span>&#9733;</span>
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </figure>
+                        </label>
+
+                        <!-- Card 4 -->
+                        <label class="card" for="item-4" id="testimonial-4">
+                            <figure class="testimonial">
+                                <blockquote>Ficou tudo perfeito, tudo muito lindo!
+                                    Muitoooooooooooooooo obrigado Bruna, você arrasa demais!
+                                    Confio de olhos fechado s em você.
+                                </blockquote>
+                                <img src="./images/dep-4.png" alt="sq-sample4" />
+                                <div class="author">
+                                    <h5>Madalena</h5>
+                                    <div class="stars">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </figure>
+                        </label>
+
+                        <label class="card" for="item-5" id="testimonial-5">
+                            <figure class="testimonial">
+                                <blockquote>Parabéns pelo seu trabalho, pelo seu desempenho.
+                                    Fico muito tranquila quando fecho um evento e você é a confeiteira.
+                                    Porque você realmente arrasa!
+                                </blockquote>
+                                <img src="./images/dep-5.jpeg" alt="sq-sample5" />
+                                <div class="author">
+                                    <h5>Nilza Santos</h5>
+                                    <h5>Assessora e Cerimonialista</h5>
+                                    <div class="stars">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </figure>
+                        </label>
+
+                        <label class="card" for="item-6" id="testimonial-6">
+                            <figure class="testimonial">
+                                <blockquote>Bruna gostaria de lhe agradecer por tudo, o bolo estava exatamente como
+                                    imaginamos,
+                                    os doces impecáveis, um sabor delicioso, uma delicadeza, parabéns!
+                                    Você tem mãos de fada!
+                                    Tudo gostoso e lindo!
+                                    Gratidão por tudo, pelo atendimento, pelo trabalho, pela forma como você expõe os
+                                    doces
+                                    enfim, gratidão! Deus lhe abençoe #sempre.🥰🥰🥰🥰🥰🥰
+                                </blockquote>
+                                <img src="./images/dep-6.png" alt="sq-sample6" />
+                                <div class="author">
+                                    <h5>Val</h5>
+                                    <div class="stars">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                                    </div>
+                                </div>
+                            </figure>
+                        </label>
+
+                        <label class="card" for="item-7" id="testimonial-7">
+                            <figure class="testimonial">
+                                <blockquote>Bruna, passando para agradecer pelo belíssimo trabalho.
+                                    Foi o destaque da decoração, todos convidados vindo conferir de perto.
+                                    Uma verdadeira obra de arte!
+                                </blockquote>
+                                <img src="./images/dep-7.jpeg" alt="sq-sample7" />
+                                <div class="author">
+                                    <h5>Clara Magalhães</h5>
+                                    <h5>Assessora e Cerimonialista</h5>
+                                    <div class="stars">
+                                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
                                     </div>
                                 </div>
                             </figure>
                         </label>
                     </div>
-
-                </div>
-                <div class="container-testimonial responsive">
-                    <figure class="testimonial">
-                        <blockquote>My behaviour is addictive functioning in a disease process of toxic
-                            co-dependency. I
-                            need holistic healing and wellness before I'll accept any responsibility for my
-                            actions.
-                            <div class="arrow"></div>
-                        </blockquote>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg"
-                            alt="sq-sample17" />
-                        <div class="author">
-                            <h5>Eleanor Faint 1</h5>
-                            <div class="stars">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure class="testimonial hover">
-                        <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is
-                            in a
-                            professional, clear plastic binder...When a report looks this good, you know
-                            it'll get an A.
-                            That's a tip kids. Write it down.
-                            <div class="arrow"></div>
-                        </blockquote>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg"
-                            alt="sq-sample27" />
-                        <div class="author">
-                            <h5>Max Conversion 2</h5>
-                            <div class="stars">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure class="testimonial">
-                        <blockquote>Calvin: You know sometimes when I'm talking, my words can't keep up with
-                            my
-                            thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we
-                            can think
-                            twice.
-                            <div class="arrow"></div>
-                        </blockquote>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg"
-                            alt="sq-sample3" />
-                        <div class="author">
-                            <h5>Pelican Steve 3</h5>
-                            <div class="stars">
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                                <span>&#9733;</span>
-                            </div>
-                        </div>
-                    </figure>
-
                 </div>
             </section>
 
             <!-- Footer -->
-            <footer>
+            <footer id="footer">
                 <div class="footer-content">
                     <p>© 2024 Bruna Reishoffer. Todos os direitos reservados.</p>
                     <div class="footer-links">
-                        <a href="#">Whatsapp</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Linktree</a>
+                        <a href="https://wa.me/5588994851096" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+                        <a href="https://www.instagram.com/brunareishoffer/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>
+                        <a href="https://linktr.ee/BrunaReishoffer" target="_blank"
+                            rel="noopener noreferrer">Linktree</a>
                     </div>
                     <a href="#" class="logo">
                         <img src="./images/logo-bruna.png" alt="logo">
@@ -776,6 +1157,17 @@
             </footer>
         </div>
     </main>
+
+    <a href="https://wa.me/5588994851096" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+        <div class="sign">
+            <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+                <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                </path>
+            </svg>
+        </div>
+    </a>
+
     <script src="./js/index.js" defer></script>
 </body>
 
