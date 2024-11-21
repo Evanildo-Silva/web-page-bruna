@@ -978,7 +978,7 @@ footer {
 
     .features .feature:nth-child(even) {
         display: flex;
-        gap: 2rem;
+        gap: 0rem;
         background-color: white;
         padding: 0.5rem 0.75rem;
         border-radius: 5px;
