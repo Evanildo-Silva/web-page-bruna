@@ -337,7 +337,7 @@ main {
 /* hero */
 .hero {
     position: relative;
-    background-image: url('../images/bg-hero.jpeg');
+    background-image: url('../images/hero-2.jpeg');
     background-size: cover;
     background-position: center;
     padding: 2rem;
