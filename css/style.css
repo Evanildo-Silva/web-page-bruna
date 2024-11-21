@@ -1248,6 +1248,18 @@ footer {
         transform: translateY(-7px) rotate(-45deg);
     }
 
+    .hero {
+        position: relative;
+        background-image: url('../images/hero-2.jpeg');
+        background-size: cover;
+        background-position: -65px;
+        padding: 2rem;
+        text-align: left;
+        color: white;
+        height: calc(100vh - 70px);
+        height: calc(100svh - 70px);
+        margin-bottom: 2rem;
+    }
 
 }
 
