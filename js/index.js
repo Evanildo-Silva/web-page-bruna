@@ -115,7 +115,7 @@ let weddingSectionSliderOptions = {
     autoplay: {
         delay: 3000
     },
-    loopAdditionalSlides: 10,
+    loopAdditionalSlides: 12,
     grabCursor: true,
     watchSlidesProgress: true,
     navigation: {
@@ -170,14 +170,14 @@ function initWeddingNavSlider(direction) {
     if (weddingNavSlider) weddingNavSlider.destroy(true, true);
     weddingNavSlider = new Swiper(weddingNavSliderSelector, {
         loop: true,
-        loopAdditionalSlides: 15,
+        loopAdditionalSlides: 12,
         speed: 1000,
         spaceBetween: 5,
         slidesPerView: 5,
         centeredSlides: true,
         touchRatio: 0.2,
         slideToClickedSlide: true,
-        direction: direction, // Dynamic direction
+        direction: direction,
         on: {
             imagesReady: function () {
                 this.el.classList.remove('loading');

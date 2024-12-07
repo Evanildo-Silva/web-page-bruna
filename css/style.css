@@ -337,7 +337,7 @@ main {
 /* hero */
 .hero {
     position: relative;
-    background-image: url('../images/hero-2.jpeg');
+    background-image: url('../images/bg-hero.jpeg');
     background-size: cover;
     background-position: center;
     padding: 2rem;
@@ -355,7 +355,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
@@ -624,7 +624,7 @@ main {
 
 .container-testimonial {
     width: 100%;
-    height: max-content;
+    height: 100%;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -1104,14 +1104,6 @@ footer {
         right: 20px;
     }
 
-    .card {
-        height: fit-content;
-    }
-
-    .cards {
-        overflow: hidden;
-    }
-
     figure.testimonial img {
         max-width: 100%;
         vertical-align: middle;
@@ -1197,6 +1189,7 @@ footer {
     .testimonials {
         padding: 0.5rem;
         text-align: center;
+        height: calc(100svh - 70px)
     }
 
     .menu {
