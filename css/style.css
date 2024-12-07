@@ -511,6 +511,7 @@ main {
 
 .feature-carousel {
     display: flex;
+    gap: 0.3rem;
     width: 60%;
     height: 80vh;
 }
@@ -1030,6 +1031,7 @@ footer {
     .carousel-section {
         display: flex;
         flex-direction: column;
+        gap: 0.3rem;
         background-color: white;
         padding-block: 2rem;
         padding-inline: 0.5rem;
