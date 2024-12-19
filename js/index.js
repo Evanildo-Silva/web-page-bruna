@@ -7,7 +7,6 @@ let mainSliderSelector = '.main-slider',
     birthdaySectionSliderSelector = '.birthday-section-slider',
     birthdayNavSliderSelector = '.birthday-nav-slider',
     interleaveOffset = 0.5;
-console.log(window.navigator.userAgent)
 // Main Slider
 let mainSliderOptions = {
     loop: true,
